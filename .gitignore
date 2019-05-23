@@ -1,0 +1,15 @@
+*.swp
+*.backup
+*.bak
+*.orig
+*.aux
+*.bcf
+*.lof
+*.run
+*.toc
+*.gz
+*.synctex.gz
+*.out
+*.log
+*.run.xml
+build/

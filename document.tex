@@ -1,0 +1,59 @@
+\input{config}
+
+\begin{document}
+\selectlanguage{ngerman}
+
+% Titelseite
+\input{content/titelseite}
+\setcounter{page}{1}
+\pagenumbering{roman}
+\newpage
+
+% Selbsständigkeitserklärung
+\input{content/erklaerung}
+\newpage
+
+% Abstract
+\input{content/abstract}
+\newpage
+
+% Inhaltsverzeichnis
+\addtocontents{toc}{\protect\enlargethispage{\baselineskip}}
+\tableofcontents
+\newpage
+
+% Abkürzungsverzeichnis
+\input{content/abkuerzungen}
+\newpage
+
+% Abbildungsverzeichnis
+\listoffigures
+\newpage
+
+% Einleitung
+\setcounter{page}{1}
+\pagenumbering{arabic}
+\input{content/einleitung}
+\newpage
+
+% Grundlagen
+\input{content/grundlagen}
+\clearpage
+
+% Hauptteil
+\input{content/hauptteil1}
+\newpage
+\input{content/hauptteil2}
+\newpage
+\input{content/hauptteil3}
+\newpage
+
+% Zusammenfassung
+\input{content/zusammenfassung}
+\newpage
+
+% Literaturverzeichnis
+\printbibliography
+
+
+\end{document}

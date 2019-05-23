@@ -1,0 +1,84 @@
+%% Layout
+\documentclass[
+	a4paper,
+	12p,
+	bibliography=totocnumbered
+]{scrartcl} 	
+
+
+%% Usepackages für Schrift, Sprache, etc
+\usepackage[T1]{fontenc}					% Schriftkodierung
+\usepackage{mathptmx}						% Times Schrift
+\usepackage[scaled=0.95]{helvet}			% Helvetica, Skalierung ggf. anspassen
+\usepackage[utf8]{inputenc}					% Umlaute, etc.
+\usepackage[ngerman]{babel}					% Sprachen
+
+
+%% Mathematische Symbole etc
+\usepackage{amsmath}
+
+
+%% Sonstige Usepackages
+\usepackage{paralist}						% Ermöglicht Aufzählungen
+\usepackage{graphicx}						% Einbinden von Grafiken
+\usepackage[pdftex,dvipsnames]{xcolor}  	% Farbiger Text etc.
+\usepackage{tabularx}						% Ermöglicht das Erstellen von Tabellen
+\usepackage{acronym}						% Ermöglicht die Verwendung von Akronymen		
+
+
+%% Konfiguration des Dokuments
+\usepackage{geometry}
+\geometry{a4paper,left=30mm,right=30mm, top=30mm, bottom=40mm} 
+\clubpenalty = 10000
+\widowpenalty = 10000
+\displaywidowpenalty = 10000
+\setlength{\parindent}{0pt}
+\usepackage[onehalfspacing]{setspace}
+
+
+%% Literatur
+\usepackage[backend=biber,sorting=none]{biblatex}
+\addbibresource{bib/literatur.bib}
+
+
+%% Information about the document
+\usepackage{titling}
+
+\title{Titel der Arbeit}
+\author{Max Mustermann}
+\newcommand{\type}{Typ der Arbeit}
+
+\newcommand{\dayOfCompletion}{10.09.2018}
+\date{\dayOfCompletion}
+\newcommand{\timeOfProject}{13 Weeks}
+\newcommand{\editingPeriod}{28.05.2018 - 30.09.2018}
+
+\newcommand{\companyName}{Unternehmensname}
+\newcommand{\companyCity}{Ort des Unternehmens}
+\newcommand{\supervisorName}{Max Mustermann}
+\newcommand{\supervisorEmail}{...}
+
+\newcommand{\universityName}{Name der Universität}
+\newcommand{\universityCity}{Stuttgart}
+\newcommand{\courseOfStudies}{Studiengang}
+\newcommand{\className}{Kursbezeichnung}
+\newcommand{\enrolmentNumber}{123456789}
+
+%% Informationen über die generierte PDF
+\usepackage[%
+	pdftitle={\thetitle},
+	pdfauthor={\theauthor},
+	pdfsubject={\type},
+	pdfcreator={pdflatex, LaTeX with KOMA-Script},
+	pdfpagemode=UseOutlines, 
+	pdfdisplaydoctitle=true, 
+	pdflang=de 
+]{hyperref}
+
+
+%% Nummerierung der Tabelle und Abbildungen in der Form Kapitelnummer.Abbildungsnummer
+\usepackage{chngcntr}
+\AtBeginDocument{\counterwithin{figure}{section}}
+\AtBeginDocument{\counterwithin{table}{subsection}}
+
+
