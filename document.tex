@@ -1,59 +1,79 @@
 \input{config}
 
 \begin{document}
-\selectlanguage{ngerman}
 
-% Titelseite
-\input{content/titelseite}
+% --------------------------
+% TITLEPAGE
+% --------------------------
+\input{content/titlepage}
 \setcounter{page}{1}
 \pagenumbering{roman}
 \newpage
 
-% Selbsständigkeitserklärung
-\input{content/erklaerung}
+% --------------------------
+% DECLARATION
+% --------------------------
+\input{content/declaration}
 \newpage
 
-% Abstract
+% --------------------------
+% ABSTRACT
+% --------------------------
 \input{content/abstract}
 \newpage
 
-% Inhaltsverzeichnis
+% --------------------------
+% TABLE OF CONTENTS
+% --------------------------
 \addtocontents{toc}{\protect\enlargethispage{\baselineskip}}
 \tableofcontents
 \newpage
 
-% Abkürzungsverzeichnis
-\input{content/abkuerzungen}
+% --------------------------
+% Abbreviations
+% --------------------------
+\input{content/abbreviations}
 \newpage
 
-% Abbildungsverzeichnis
+% --------------------------
+% LIST OF FIGURES
+% --------------------------
 \listoffigures
 \newpage
 
-% Einleitung
+% --------------------------
+% INTRODUCTION
+% --------------------------
 \setcounter{page}{1}
 \pagenumbering{arabic}
-\input{content/einleitung}
+\input{content/introduction}
 \newpage
 
-% Grundlagen
-\input{content/grundlagen}
+% --------------------------
+% BASICS 
+% --------------------------
+\input{content/basics}
 \clearpage
 
-% Hauptteil
-\input{content/hauptteil1}
+% --------------------------
+% MAIN PART
+% --------------------------
+\input{content/mainpart1}
 \newpage
-\input{content/hauptteil2}
+\input{content/mainpart2}
 \newpage
-\input{content/hauptteil3}
-\newpage
-
-% Zusammenfassung
-\input{content/zusammenfassung}
+\input{content/mainpart3}
 \newpage
 
-% Literaturverzeichnis
+% --------------------------
+% SUMMARY
+% --------------------------
+\input{content/summary}
+\newpage
+
+% --------------------------
+% BIBLIOGRAPHY
+% --------------------------
 \printbibliography
-
 
 \end{document}
