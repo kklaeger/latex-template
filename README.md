@@ -31,7 +31,7 @@ Quick Start for the LaTeX template using Texmaker.
 --- 
 
 
-# Latex Vorlage für wissenschaftliche Arbeiten
+# LaTeX Vorlage für wissenschaftliche Arbeiten
 
 Quick Start für das LaTeX-Vorlage unter der Verwendung von Texmaker.
 
