@@ -12,4 +12,7 @@
 *.out
 *.log
 *.run.xml
-build/
+*-blx.bib
+*.bbl
+*.blg
+*.pdf
